@@ -12,7 +12,7 @@
             <ColumnDefinition Width="1.5*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Background="LightGray">
-            <Expander Header="Компания">
+            <Expander Header="Компания" x:Name="company_group">
                 <StackPanel>
                     <RadioButton IsChecked="True" Margin="3">Лнит</RadioButton>
                     <RadioButton Margin="3">СКБ Контур</RadioButton>
@@ -35,7 +35,7 @@
                 </StackPanel>
             </Expander>
         </StackPanel>
-        <StackPanel Grid.Column="1" x:Name="Компиляторы">
+        <StackPanel Grid.Column="1" x:Name="Compilers">
             <GroupBox Header="Компиляторы">
                 <StackPanel>
                     <CheckBox x:Name="checkbox1" IsChecked="True" Content="Visual Studio" Height="20"/>
@@ -49,5 +49,13 @@
                 </StackPanel>
             </GroupBox>
         </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" 
+                    Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button Content="Сохранить выбор" Background="#8E9F60" Name="send_button"/>
+            <Button Content="Отменить выбор" Background="#FFAF5D44" Name="drop_button" />
+        </StackPanel>
+        <WrapPanel x:Name="wrapPannel" Grid.Column="1" Orientation="Vertical">
+            <CheckBox x:Name="checkbox9" Content="Администратор баз данных" IsChecked="False"/>
+        </WrapPanel>
     </Grid>
 </Window>
