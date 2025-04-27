@@ -35,5 +35,19 @@
                 </StackPanel>
             </Expander>
         </StackPanel>
+        <StackPanel Grid.Column="1" x:Name="Компиляторы">
+            <GroupBox Header="Компиляторы">
+                <StackPanel>
+                    <CheckBox x:Name="checkbox1" IsChecked="True" Content="Visual Studio" Height="20"/>
+                    <CheckBox x:Name="checkbox2" IsChecked="False" Content="Visual Studio Code" Height="20"/>
+                    <CheckBox x:Name="checkbox3" IsChecked="False" Content="XCode" Height="20"/>
+                    <CheckBox x:Name="checkbox4" IsChecked="False" Content="PyCharm" Height="20"/>
+                    <CheckBox x:Name="checkbox5" IsChecked="False" Content="Spyder" Height="20"/>
+                    <CheckBox x:Name="checkbox6" IsChecked="True" Content="Pydev" Height="20"/>
+                    <CheckBox x:Name="checkbox7" IsChecked="False" Content="Code Blocks" Height="20"/>
+                    <CheckBox x:Name="checkbox8" IsChecked="False" Content="Dev C++" Height="20"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
     </Grid>
 </Window>
