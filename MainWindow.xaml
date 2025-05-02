@@ -55,15 +55,20 @@
             <Button Content="Отменить выбор" Background="#FFAF5D44" Name="drop_button" />
 
         </StackPanel>
-        <!--<WrapPanel x:Name="wrapPannel" Grid.Column="1" Orientation="Vertical">
-            <CheckBox x:Name="checkbox9" Content="Администратор баз данных" IsChecked="False"/>
-            <CheckBox x:Name="checkbox10" Content="Администратор вычислительной сети" IsChecked="False"/>
-            <CheckBox x:Name="checkbox11" Content="Администратор защиты" IsChecked="False"/>
-            <CheckBox x:Name="checkbox12" Content="Аналитик программного обеспечения" IsChecked="False"/>
-            <CheckBox x:Name="checkbox13" Content="Архитектор проограммного обеспечения" IsChecked="False"/>
-            <CheckBox x:Name="checkbox14" Content="Ведущий программист" IsChecked="False"/>
-            <CheckBox x:Name="checkbox15" Content="Контент-менеджер" IsChecked="False"/>
-            <CheckBox x:Name="checkbox16" Content="Тестировщик" IsChecked="False"/>
-        </WrapPanel>-->
+        <WrapPanel x:Name="wrapPannel" Grid.Column="1" Orientation="Vertical" 
+                   VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            <GroupBox>
+                <WrapPanel>
+                    <CheckBox x:Name="checkbox9" Content="Администратор баз данных" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox10" Content="Администратор вычислительной сети" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox11" Content="Администратор защиты" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox12" Content="Аналитик программного обеспечения" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox13" Content="Архитектор проограммного обеспечения" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox14" Content="Ведущий программист" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox15" Content="Контент-менеджер" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox16" Content="Тестировщик" IsChecked="False"/>
+                </WrapPanel>
+            </GroupBox>
+        </WrapPanel>
     </Grid>
 </Window>
